@@ -110,7 +110,8 @@ class _MyHomePageState extends State<MyHomePage> {
                                 dotData: FlDotData(show: showDot)),
                           ],
                         ),
-                        swapAnimationDuration: Duration(milliseconds: 150),
+                        swapAnimationDuration:
+                            const Duration(milliseconds: 150),
                         swapAnimationCurve: Curves.linear,
                       ),
                     ),
@@ -170,9 +171,9 @@ class _MyHomePageState extends State<MyHomePage> {
                         borderRadius: BorderRadius.circular(20)),
                   ),
                   inputFormatters: [FilteringTextInputFormatter.digitsOnly],
-                  onFieldSubmitted: (num) {
+                  onFieldSubmitted: (value) {
                     valueEntered = true;
-                    number = double.parse(num.trim());
+                    number = double.parse(value.trim());
                     points = [];
                     yCoordinates = [];
                     count = 0;
