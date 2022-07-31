@@ -48,25 +48,28 @@ class _MyHomePageState extends State<MyHomePage> {
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(30),
             ),
-            child: Padding(
-              padding: const EdgeInsets.all(30),
-              child: Column(
-                children: [
-                  Text("Count : $count"),
-                  const SizedBox(height: 20),
-                  Column(
-                    children: [
-                      const Text("Y Points: "),
-                      const SizedBox(height: 5),
-                      Wrap(
-                        spacing: 10,
-                        children: points
-                            .map((point) => Text("${printYPoint(point)}"))
-                            .toList(),
-                      ),
-                    ],
-                  ),
-                ],
+            child: SizedBox(
+              width: width,
+              child: Padding(
+                padding: const EdgeInsets.all(30),
+                child: Column(
+                  children: [
+                    Text("Count : $count"),
+                    const SizedBox(height: 20),
+                    Column(
+                      children: [
+                        const Text("Y Points: "),
+                        const SizedBox(height: 5),
+                        Wrap(
+                          spacing: 10,
+                          children: points
+                              .map((point) => Text("${printYPoint(point)}"))
+                              .toList(),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
               ),
             ),
           ),
