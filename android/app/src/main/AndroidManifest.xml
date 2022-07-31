@@ -3,7 +3,7 @@
    <application
         android:label="Collatz Graph Plotter"
         android:name="${applicationName}"
-        android:icon="@mipmap/ic_launcher">
+        android:icon="@mipmap/line_graph">
         <activity
             android:name=".MainActivity"
             android:exported="true"

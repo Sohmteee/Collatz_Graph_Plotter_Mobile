@@ -150,7 +150,7 @@ class _MyHomePageState extends State<MyHomePage> {
       backgroundColor: Colors.grey,
       appBar: AppBar(
         centerTitle: true,
-        title: const Text("Chart Test"),
+        title: const Text("Collatz Graph Plotter"),
       ),
       body: SingleChildScrollView(
         child: Center(
